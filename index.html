@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hungry People</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="logo" src="https://via.placeholder.com/150x150" alt="logo" width="150" height="150">
+    <nav class="main-menu">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">home</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">
+            about</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">team</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">booking</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">menu</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">galerie</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">events</a>
+        </li>
+        <li class="main-menu__item">
+          <a class="main-menu__link" href="">contact</a>
+        </li>
+      </ul>
+    </nav>
+    <p class="page-header__timetable">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+    <p class="page-header__title">
+      <span class="page-header__text page-header__text--small">restaurant</span>
+      <span class="page-header__text page-header__text--big">hungry people</span>
+    </p>
+    <div class="page-header__btns">
+      <button class="btn page-header__btn page-header__btn--yellow" type="button">book table</button>
+      <button class="btn page-header__btn" type="button">explore</button>
+    </div>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">facebook</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">twitter</a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" href="#">instagram</a>
+      </li>
+    </ul>
+    <a class="page-header__arrow" href="#">down</a>
+  </header>
+  <main class="content">
+    <h1 class="content__title">Restaurant Hungry People Site</h1>
+    <section class="section about">
+      <h2 class="section__title section__title--big">About us</h2>
+      <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+        velit
+        maximus, molestie est a, tempor magna.
+      </p>
+      <p class="section__text section__text--small section__text--black">Integer ullamcorper neque eu purus euismod, ac
+        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+      <img class="section__img" src="https://via.placeholder.com/475x475" alt="Restaurant interior">
+    </section>
+    <section class="section team">
+      <h2 class="section__title section__title--small">Our team</h2>
+      <img class="section__img" src="https://via.placeholder.com/475x475" alt="Chef">
+      <p class="section__title section__title--big">Master Chef</p>
+      <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+        velit maximus, molestie est a, tempor magna.
+      </p>
+      <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod, ac
+        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+    </section>
+    <section class="section book">
+      <h2 class="section__titile section__title--big">Book a table</h2>
+      <form class="book__form" action="#" method="GET">
+        <div class="book__column">
+          <input class="book__input" type="text" name="name" placeholder="Name" required minlength="2" maxlength="20">
+          <input class="book__input" type="tel" name="phone" required placeholder="Phone">
+          <input class="book__input" type="date" name="date" required>
+        </div>
+        <div class="book__column">
+          <input class="book__input" type="email" name="email" required>
+          <select class="book__input" name="people" required>
+            <option value="1">1 people</option>
+            <option value="2">2 people</option>
+            <option value="3">3 people</option>
+            <option value="4">4 people</option>
+            <option value="5">5 people</option>
+            <option value="6">6 people</option>
+          </select>
+          <select class="book__input" name="time">
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+            <option value="20:00">20:00</option>
+            <option value="21:00">21:00</option>
+            <option value="22:00">22:00</option>
+            <option value="23:00">23:00</option>
+            <option value="24:00">24:00</option>
+          </select>
+        </div>
+        <button class="btn book_btn" type="submit">Book now</button>
+      </form>
+      <img class="section__img" src="https://via.placeholder.com/475x475" alt="Clock">
+      <p class="book__text">
+        Mon - Fri: <span class="book__text book__text--bold">8PM - 10PM</span>, Sat - Sun: <span
+          class="book__text book__text--bold">8PM - 3AM</span>, Phone: <a class="book__text book__text--bold"
+          href="tel:+40729131637">+40 729
+          131 637/</a><a class="book__text book__text--bold" href="tel:+40726458782">+40 726 458 782</a>
+      </p>
+    </section>
+    <section class="section spec">
+      <h2 class="section__title section__title--small">Specialties</h2>
+      <img class="section__img" src="https://via.placeholder.com/475x475" alt="Food">
+      <p class="section__titile section__title--big">Chocolate pancakes</p>
+      <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+        velit maximus, molestie est a, tempor magna.
+      </p>
+      <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod, ac
+        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+      <input type="radio" name="item">
+      <input type="radio" name="item">
+      <input type="radio" name="item">
+    </section>
+    <section class="section menu">
+      <h2 class="section__titile section__title--big">Delicious menu</h2>
+      <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+        velit maximus, molestie est a, tempor magna.
+      </p>
+      <ul class="menu_btns">
+        <li class="menu__btn"><button type="button">Soupe</button></li>
+        <li class="menu__btn"><button type="button">Pizza</button></li>
+        <li class="menu__btn"><button type="button">Pasta</button></li>
+        <li class="menu__btn"><button type="button">Desert</button></li>
+        <li class="menu__btn"><button type="button">Wine</button></li>
+        <li class="menu__btn"><button type="button">Beer</button></li>
+        <li class="menu__btn"><button type="button">Drinks</button></li>
+      </ul>
+      <ul>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+        <li>
+          <h3>Pizza Quatro Stagioni</h3>
+          <p>Integer ullamcorper neque eu purus euismod</p>
+          <p>
+            <spna>55,68</spna>
+            <spna>USD</spna>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Private events</h2>
+      <div>
+        <img src="https://via.placeholder.com/475x475" alt="Weddings">
+        <p>Weddings</p>
+      </div>
+      <div>
+        <img src="https://via.placeholder.com/475x475" alt="Corporate Parties">
+        <p>Corporate Parties</p>
+      </div>
+      <p>For private events please call: <a href="tel:+40729131637">+40 729 131 637/</a><a href="+40726458782">+40 726
+          458 782</a> or use the contact form.</p>
+    </section>
+    <section>
+      <h2>Gallery</h2>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/360x360" alt="Photo1">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/360x360" alt="Photo2">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/360x360" alt="Photo3">
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/360x360" alt="Photo4">
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+      </p>
+      <form action="#" method="GET">
+        <fieldset>
+          <legend>Message</legend>
+          <input type="text" name="Name" placeholder="Name" required minlength="2" maxlength="20">
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="Phone" placeholder="Phone" required>
+          <textarea name="message" cols="30" rows="10" required placeholder="Message"></textarea>
+        </fieldset>
+        <div>
+          <p>5th London Boulevard, U.K.</p>
+          <p>
+            <a href="tel:+40729131637">+40 729 131 637/</a><a href="tel:+40726458782">+40 726 458 782</a>
+          </p>
+          <a href="mailto:office@mindblister.com">office@mindblister.com</a>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <div>
+        <img src="https://via.placeholder.com/1440x475" alt="5th London Boulevard, U.K.">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; Copyright Mindblister 2020</p>
+  </footer>
+</body>
+
+</html>
