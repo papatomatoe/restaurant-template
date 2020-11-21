@@ -1,1 +1,49 @@
-/* styles */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v18-latin-regular.woff2') format('woff2'),
+      url('../fonts/open-sans-v18-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v18-latin-700.woff2') format('woff2'), 
+      url('../fonts/open-sans-v18-latin-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Banny';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Banny-LightRound.woff2') format('woff2'), 
+      url('../fonts/Banny-LightRound.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Banny';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Banny-Round.woff2') format('woff2'), 
+      url('../fonts/Banny-Round.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Banny';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Banny-BoldRound.woff2') format('woff2'), 
+      url('../fonts/Banny-BoldRound.woff') format('woff');
+}
+
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Banny', Arial, sans-serif ;
+  font-weight: 700;
+}
