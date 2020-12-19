@@ -5,65 +5,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hungry People</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <img class="logo" src="img/logo.svg" alt="logo" width="150" height="150">
-    <nav class="main-menu">
-      <ul class="main-menu__list">
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">home</a>
+    <div class="container">
+      <img class="logo" src="img/logo.svg" alt="logo" width="150" height="150">
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <div class="main-menu__col">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">
+                about</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">team</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">booking</a>
+            </li>
+          </div>
+          <div class="main-menu__col">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">menu</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">galerie</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">events</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="">contact</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <p class="page-header__timetable">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+      <p class="page-header__title">
+        <span class="page-header__text page-header__text--small">restaurant</span>
+        <span class="page-header__text page-header__text--big">hungry people</span>
+      </p>
+      <div class="page-header__btns">
+        <button class="btn page-header__btn page-header__btn--yellow" type="button">book table</button>
+        <button class="btn page-header__btn" type="button">explore</button>
+      </div>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">facebook</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">
-            about</a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">twitter</a>
         </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">team</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">booking</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">menu</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">galerie</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">events</a>
-        </li>
-        <li class="main-menu__item">
-          <a class="main-menu__link" href="">contact</a>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">instagram</a>
         </li>
       </ul>
-    </nav>
-    <p class="page-header__timetable">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
-    <p class="page-header__title">
-      <span class="page-header__text page-header__text--small">restaurant</span>
-      <span class="page-header__text page-header__text--big">hungry people</span>
-    </p>
-    <div class="page-header__btns">
-      <button class="btn page-header__btn page-header__btn--yellow" type="button">book table</button>
-      <button class="btn page-header__btn" type="button">explore</button>
+      <a class="page-header__arrow" href="#">down</a>
     </div>
-    <ul class="social-list">
-      <li class="social-list__item">
-        <a class="social-list__link" href="#">facebook</a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#">twitter</a>
-      </li>
-      <li class="social-list__item">
-        <a class="social-list__link" href="#">instagram</a>
-      </li>
-    </ul>
-    <a class="page-header__arrow" href="#">down</a>
   </header>
   <main class="content">
-    <h1 class="content__title">Restaurant Hungry People Site</h1>
+    <h1 class="visually-hidden">Restaurant Hungry People Site</h1>
     <section class="section about">
       <h2 class="section__title section__title--big">About us</h2>
       <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
@@ -347,7 +354,7 @@
           458 782</a> or use the contact form.</p>
     </section>
     <section class="section gallery">
-      <h2 class="section__title">Gallery</h2>
+      <h2 class="visually-hidden">Gallery</h2>
       <ul class="gallery__list">
         <li class="gallery__item">
           <img class="gallery__img" src="img/Rectangle.jpg" alt="Photo1" width="360" height="360">
