@@ -38,12 +38,125 @@
       url('../fonts/Banny-BoldRound.woff') format('woff');
 }
 
-
 body {
   font-family: 'Open Sans', Arial, sans-serif;
+
+  min-width: 1440px;
 }
 
-h1 {
-  font-family: 'Banny', Arial, sans-serif ;
-  font-weight: 700;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.page-header {
+  min-height: 800px;
+
+  background-color: #000000;
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  url('../img/header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+
+  color: #ffffff;
+
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+
+  padding: 0 80px;
+
+  box-sizing: border-box;
+
+  position: relative;
+}
+
+.main-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-menu__col {
+  width: 530px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.main-menu__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  font-size: 12px;
+  line-height: 1;
+}
+
+.logo {
+  position: absolute;
+
+  top: -15px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.page-header__title {
+  margin-top: 238px;
+}
+
+.page-header__text {
+  display: block;
+}
+
+.page-header__text--small {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  margin-bottom: 21px;;
+  letter-spacing: 6px;
+  padding-left: 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.page-header__text--big {
+font-family: 'Banny', Arial, sans-serif;;
+font-size: 96px;
+line-height: 1;
+
+text-align: center;
+text-transform: uppercase;
+
+color: #ffffff;
+letter-spacing: 0.6px;
+} 
