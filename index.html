@@ -57,43 +57,56 @@
       </div>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="#">facebook</a>
+          <a class="social-list__link social-list__link--fb" href="#" aria-label="facebook"></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">twitter</a>
+          <a class="social-list__link social-list__link--tw" href="#" aria-label="twitter"></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">instagram</a>
+          <a class="social-list__link social-list__link--inst" href="#" aria-label="instagram"></a>
         </li>
       </ul>
-      <a class="page-header__arrow" href="#">down</a>
+      <a class="page-header__arrow" href="#" aria-label="move down"></a>
     </div>
   </header>
   <main class="content">
     <h1 class="visually-hidden">Restaurant Hungry People Site</h1>
     <section class="section about">
-      <h2 class="section__title section__title--big">About us</h2>
-      <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-        velit
-        maximus, molestie est a, tempor magna.
-      </p>
-      <p class="section__text section__text--small section__text--black">Integer ullamcorper neque eu purus euismod, ac
-        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
-        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
-      <img class="section__img" src="img/about-img-1.jpg" alt="Restaurant interior" width="475" height="475">
+      <div class="container section__wrapper">
+        <div class="section__col section__col--info">
+          <h2 class="about__title section__title section__title--big">About us</h2>
+          <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit
+            maximus, molestie est a, tempor magna.
+          </p>
+          <p class="section__text section__text--small section__text--black">Integer ullamcorper neque eu purus euismod,
+            ac
+            faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+        <div class="section__col section__col--img">
+          <img class="section__img" src="img/about-img-1.jpg" alt="Restaurant interior" width="475" height="475">
+        </div>
+      </div>
     </section>
     <section class="section team">
-      <h2 class="section__title section__title--small">Our team</h2>
-      <img class="section__img" src="img/Rectangle-7.jpg" alt="Chef" width="475" height="475">
-      <p class="section__title section__title--big">Master Chef</p>
-      <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-        velit maximus, molestie est a, tempor magna.
-      </p>
-      <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod, ac
-        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
-        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+      <div class="container section__wrapper">
+        <h2 class="section__title section__title--small">Our team</h2>
+        <div class="section__col section__col--img"> <img class="section__img" src="img/Rectangle-7.jpg" alt="Chef"
+            width="475" height="475"></div>
+        <div class="section__col section__col--info">
+          <p class="section__title section__title--big">Master Chef</p>
+          <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.
+          </p>
+          <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod,
+            ac
+            faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
     </section>
     <section class="section book">
       <h2 class="section__title section__title--big">Book a table</h2>
