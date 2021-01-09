@@ -52,7 +52,7 @@
         <span class="page-header__text page-header__text--big">hungry people</span>
       </p>
       <div class="page-header__btns">
-        <button class="btn page-header__btn page-header__btn--yellow" type="button">book table</button>
+        <button class="btn page-header__btn btn--yellow" type="button">book table</button>
         <button class="btn page-header__btn" type="button">explore</button>
       </div>
       <ul class="social-list">
@@ -91,12 +91,13 @@
       </div>
     </section>
     <section class="section team">
-      <div class="container section__wrapper">
-        <h2 class="section__title section__title--small">Our team</h2>
-        <div class="section__col section__col--img"> <img class="section__img" src="img/Rectangle-7.jpg" alt="Chef"
-            width="475" height="475"></div>
-        <div class="section__col section__col--info">
-          <p class="section__title section__title--big">Master Chef</p>
+      <div class="container section__wrapper section__wrapper--black">
+        <h2 class="section__title section__title--small section__title--white">Our team</h2>
+        <div class="section__col section__col--img section__col--img-left">
+          <img class="section__img" src="img/Rectangle-7.jpg" alt="Chef" width="475" height="475">
+        </div>
+        <div class="section__col section__col--info section__col--info-right">
+          <p class="section__title section__title--big section__title--white">Master Chef</p>
           <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
             velit maximus, molestie est a, tempor magna.
           </p>
@@ -109,45 +110,52 @@
       </div>
     </section>
     <section class="section book">
-      <h2 class="section__title section__title--big">Book a table</h2>
-      <form class="form book__form" action="#" method="GET">
-        <div class="book__column">
-          <input class="form__input book__input" type="text" name="name" placeholder="Name" required minlength="2"
-            maxlength="20">
-          <input class="form__input book__input" type="tel" name="phone" required placeholder="Phone">
-          <input class="form__input book__input" type="date" name="date" required>
+      <div class="container section__wrapper">
+        <div class="section__col section__col--info book__col book__col--info">
+          <h2 class="section__title section__title--big">Book a table</h2>
+          <form class="form book__form" action="#" method="GET">
+            <input class="form__input book__input" type="text" name="name" placeholder="Name" required minlength="2"
+              maxlength="20">
+            <input class="form__input book__input" type="email" name="email" placeholder="Email" required>
+            <input class="form__input book__input" type="tel" name="phone" required placeholder="Phone">
+            <div class="book__select-container">
+              <select class="form__input book__input book__select" name="people" required>
+                <option value="" disabled selected>People</option>
+                <option value="1">1 people</option>
+                <option value="2">2 people</option>
+                <option value="3">3 people</option>
+                <option value="4">4 people</option>
+                <option value="5">5 people</option>
+                <option value="6">6 people</option>
+              </select>
+            </div>
+            <input class="form__input book__input book__date" type="text" name="date" placeholder="Date"
+              onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <div class="book__select-container">
+              <select class="form__input book__input book__select" name="time">
+                <option value="" disabled selected>Time</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+                <option value="23:00">23:00</option>
+                <option value="24:00">24:00</option>
+              </select>
+            </div>
+            <button class="btn btn--yellow form__btn book_btn" type="submit">Book now</button>
+          </form>
         </div>
-        <div class="book__column">
-          <input class="form__input book__input" type="email" name="email" required>
-          <select class="book__input" name="people" required>
-            <option value="">---</option>
-            <option value="1">1 people</option>
-            <option value="2">2 people</option>
-            <option value="3">3 people</option>
-            <option value="4">4 people</option>
-            <option value="5">5 people</option>
-            <option value="6">6 people</option>
-          </select>
-          <select class="book__input" name="time">
-            <option value="">---</option>
-            <option value="18:00">18:00</option>
-            <option value="19:00">19:00</option>
-            <option value="20:00">20:00</option>
-            <option value="21:00">21:00</option>
-            <option value="22:00">22:00</option>
-            <option value="23:00">23:00</option>
-            <option value="24:00">24:00</option>
-          </select>
+        <div class="section__col section__col--img">
+          <img class="section__img" src="img/about-img.jpg" alt="Clock" width="475" height="475">
         </div>
-        <button class="btn form__btn book_btn" type="submit">Book now</button>
-      </form>
-      <img class="section__img" src="img/about-img.jpg" alt="Clock" width="475" height="475">
-      <p class="section__contacts section__contacts--gray">
-        Mon - Fri: <span class="section__contacts section__contacts--bold">8PM - 10PM</span>, Sat - Sun: <span
-          class="section__contacts section__contacts--bold">8PM - 3AM</span>, Phone: <a
-          class="section__contacts section__contacts--bold" href="tel:+40729131637">+40 729
-          131 637/</a><a class="section__contacts section__contacts--bold" href="tel:+40726458782">+40 726 458 782</a>
-      </p>
+        <p class="section__contacts section__contacts--gray">
+          Mon - Fri: <span class="section__contacts section__contacts--bold">8PM - 10PM</span>, Sat - Sun: <span
+            class="section__contacts section__contacts--bold">8PM - 3AM</span>, Phone: <a
+            class="section__contacts section__contacts--bold" href="tel:+40729131637">+40 729
+            131 637/</a><a class="section__contacts section__contacts--bold" href="tel:+40726458782">+40 726 458 782</a>
+        </p>
+      </div>
     </section>
     <section class="section spec">
       <h2 class="section__title section__title--small">Specialties</h2>
