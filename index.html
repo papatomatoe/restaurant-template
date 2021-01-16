@@ -86,15 +86,16 @@
             feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </div>
         <div class="section__col section__col--img">
-          <img class="section__img" src="img/about-img-1.jpg" alt="Restaurant interior" width="475" height="475">
+          <img class="section__img about__img" src="img/about-img-1.jpg" alt="Restaurant interior" width="475"
+            height="475">
         </div>
       </div>
     </section>
-    <section class="section team">
+    <section class="section section--black team">
       <div class="container section__wrapper section__wrapper--black">
         <h2 class="section__title section__title--small section__title--white">Our team</h2>
         <div class="section__col section__col--img section__col--img-left">
-          <img class="section__img" src="img/Rectangle-7.jpg" alt="Chef" width="475" height="475">
+          <img class="section__img team__img" src="img/Rectangle-7.jpg" alt="Chef" width="475" height="475">
         </div>
         <div class="section__col section__col--info section__col--info-right">
           <p class="section__title section__title--big section__title--white">Master Chef</p>
@@ -129,7 +130,7 @@
                 <option value="6">6 people</option>
               </select>
             </div>
-            <input class="form__input book__input book__date" type="text" name="date" placeholder="Date"
+            <input class="form__input book__input book__date" type="text" name="date" placeholder="Date (mm/dd)"
               onfocus="(this.type='date')" onblur="(this.type='text')" required>
             <div class="book__select-container">
               <select class="form__input book__input book__select" name="time">
@@ -146,10 +147,10 @@
             <button class="btn btn--yellow form__btn book_btn" type="submit">Book now</button>
           </form>
         </div>
-        <div class="section__col section__col--img">
-          <img class="section__img" src="img/about-img.jpg" alt="Clock" width="475" height="475">
+        <div class="section__col section__col--img book__col book__col--img">
+          <img class="section__img book__img" src="img/about-img.jpg" alt="Clock" width="475" height="475">
         </div>
-        <p class="section__contacts section__contacts--gray">
+        <p class="section__contacts section__contacts--gray book__contacts">
           Mon - Fri: <span class="section__contacts section__contacts--bold">8PM - 10PM</span>, Sat - Sun: <span
             class="section__contacts section__contacts--bold">8PM - 3AM</span>, Phone: <a
             class="section__contacts section__contacts--bold" href="tel:+40729131637">+40 729
@@ -157,205 +158,224 @@
         </p>
       </div>
     </section>
-    <section class="section spec">
-      <h2 class="section__title section__title--small">Specialties</h2>
-      <img class="section__img" src="img/Rectangle-6.jpg" alt="Food" width="475" height="475">
-      <p class="section__title section__title--big">Chocolate pancakes</p>
-      <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-        velit maximus, molestie est a, tempor magna.
-      </p>
-      <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod, ac
-        faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
-        enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-        feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
-      <input class="spec__radio" type="radio" name="item">
-      <input class="spec__radio" type="radio" name="item">
-      <input class="spec__radio" type="radio" name="item">
+    <section class="section section--black spec">
+      <div class="container section__wrapper section__wrapper--black spec__container">
+
+        <input class="spec__radio" id="spec-1" type="radio" name="item" checked>
+        <label class="spec__control" for="spec-1"></label>
+
+        <input class="spec__radio" id="spec-2" type="radio" name="item">
+        <label class="spec__control" for="spec-2"></label>
+
+        <input class="spec__radio" id="spec-3" type="radio" name="item">
+        <label class="spec__control" for="spec-3"></label>
+
+        <h2 class="section__title section__title--small section__title--white">Specialties</h2>
+        <div class="section__col section__col--img section__col--img-left spec__col spec__col--img">
+          <img class="section__img spec__img" src="img/Rectangle-6.jpg" alt="Food" width="475" height="475">
+          <img class="section__img spec__img" src="img/Rectangle-5.jpg" alt="Food" width="475" height="475">
+          <img class="section__img spec__img" src="img/Rectangle-4.jpg" alt="Food" width="475" height="475">
+        </div>
+        <div class="section__col section__col--info section__col--info-right spec__col spec__col--info">
+          <p class="section__title section__title--big section__title--white">Chocolate pancakes</p>
+          <p class="section__text section__text--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+            velit maximus, molestie est a, tempor magna.
+          </p>
+          <p class="section__text section__text--small section__text--white">Integer ullamcorper neque eu purus euismod,
+            ac
+            faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum,
+            enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
+            feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
     </section>
     <section class="section menu">
-      <h2 class="section__title section__title--big">Delicious menu</h2>
-      <p class="section__text section__text--black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
-        velit maximus, molestie est a, tempor magna.
-      </p>
-      <ul class="menu_btns">
-        <li class="menu__btn"><button type="button">Soupe</button></li>
-        <li class="menu__btn"><button type="button">Pizza</button></li>
-        <li class="menu__btn"><button type="button">Pasta</button></li>
-        <li class="menu__btn"><button type="button">Desert</button></li>
-        <li class="menu__btn"><button type="button">Wine</button></li>
-        <li class="menu__btn"><button type="button">Beer</button></li>
-        <li class="menu__btn"><button type="button">Drinks</button></li>
-      </ul>
-      <ul class="menu__list">
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-        <li class="menu__item">
-          <h3 class="menu__title">Pizza Quatro Stagioni</h3>
-          <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
-          <p class="menu__price">
-            <span class="menu__value">55,68</span>
-            <span class="menu__type">USD</span>
-          </p>
-        </li>
-      </ul>
+      <div class="container section__wrapper menu__container">
+        <h2 class="section__title section__title--big menu__title">Delicious menu</h2>
+        <p class="section__text section__text--black menu__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit. Duis at
+          velit maximus, molestie est a, tempor magna.
+        </p>
+        <ul class="menu_btns">
+          <li class="menu__btn"><button type="button">Soupe</button></li>
+          <li class="menu__btn"><button type="button">Pizza</button></li>
+          <li class="menu__btn"><button type="button">Pasta</button></li>
+          <li class="menu__btn"><button type="button">Desert</button></li>
+          <li class="menu__btn"><button type="button">Wine</button></li>
+          <li class="menu__btn"><button type="button">Beer</button></li>
+          <li class="menu__btn"><button type="button">Drinks</button></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+          <li class="menu__item">
+            <h3 class="menu__item-title">Pizza Quatro Stagioni</h3>
+            <p class="menu__text">Integer ullamcorper neque eu purus euismod</p>
+            <p class="menu__price">
+              <span class="menu__value">55,68</span>
+              <span class="menu__type">USD</span>
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="section events">
       <h2 class="section__title section__title--small">Private events</h2>

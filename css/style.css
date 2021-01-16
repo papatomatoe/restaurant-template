@@ -407,7 +407,7 @@ select {
 
 .about {
   padding-top: 100px;
-  padding-bottom: 97px;
+  padding-bottom: 100px;
 }
 
 .section__wrapper {
@@ -418,7 +418,7 @@ select {
 .section__wrapper--black {
   position: relative;
   padding-top: 34px;
-  padding-bottom: 98px;
+  padding-bottom: 100px;
 }
 
 .section__wrapper--black::after {
@@ -460,6 +460,10 @@ select {
 .about__title {
   margin-bottom: 33px;
   margin-left: 56px;
+}
+
+.about__img {
+  margin-left: 81px;
 }
 
 .section__title--big {
@@ -516,6 +520,7 @@ select {
 }
 
 .section__img {
+  display: block;
   border-radius: 5px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -547,10 +552,6 @@ select {
   left: 0;
 }
 
-.section__col--img-left .section__img {
-  margin-left: 61px;
-}
-
 .section__contacts {
   width: 100%;
   text-align: center;
@@ -571,6 +572,41 @@ select {
   font-weight: 700;
 }
 
+.section--black {
+  position: relative;
+  background-color: #000000;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section--black::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+
+  top: 0;
+  left: calc(50% - 426px);
+
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.section--black::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 1px;
+
+  top: 0;
+  left: calc(50% + 424px);
+
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 
 .form__input {
   background: #E5E5E5;
@@ -587,46 +623,22 @@ select {
 
 
 .team {
-  position: relative;
-  background-color: #000000;
-
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/specialty's-bg-1.jpg") ;
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.team::before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 1px;
-
-  top: 0;
-  left: calc(50% - 426px);
-
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.team::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 1px;
-
-  top: 0;
-  left: calc(50% + 424px);
-
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+.team__img {
+  margin-left: 113px;
 }
 
 .book {
   padding-top: 100px;
+  padding-bottom: 31px;
+}
+
+.book__img {
+  margin-left: 54px;
 }
 
 .book__form {
@@ -678,4 +690,188 @@ select {
 .book__col--info {
   padding-top: 36px;
   margin-left: 38px;
+}
+
+.book__col--img::after {
+  top: 50%;
+  right: -3px;
+  width: 226px;
+  height: 225px;
+}
+
+.book__contacts {
+  margin-top: 45px;
+}
+
+.spec {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/specialty's-bg.jpg") ;
+}
+
+.spec__img {
+  margin-left: 126px;
+}
+
+.spec__col--img::after {
+  height: 261px;
+}
+
+.spec__col--info {
+  margin-left: 40px;
+}
+
+.spec__container {
+  position: relative;
+}
+.spec__radio {
+  display: none;
+}
+.spec__control {
+  position: absolute;
+
+  bottom: 55px;
+  left: 49.7%;
+}
+
+.spec__control:nth-of-type(1) {
+  transform: translateX(-30px)
+}
+
+.spec__control:nth-of-type(3) {
+  transform: translateX(30px)
+}
+
+.spec__control::before {
+  content: '';
+  position: absolute;
+  display: block;
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  opacity: 0.5;
+
+  cursor: pointer;
+}
+
+.spec__radio:checked + .spec__control::before {
+  opacity: 1;
+}
+
+.spec__img {
+  display: none;
+}
+
+.spec__radio:nth-of-type(1):checked ~ .spec__col--img .spec__img:nth-of-type(1) {
+  display: block;
+}
+
+.spec__radio:nth-of-type(2):checked ~ .spec__col--img .spec__img:nth-of-type(2) {
+  display: block;
+}
+
+.spec__radio:nth-of-type(3):checked ~ .spec__col--img .spec__img:nth-of-type(3) {
+  display: block;
+}
+
+.menu {
+  padding-top: 76px;
+}
+
+.menu__container {
+  display: block;
+}
+
+.menu__title {
+  text-align: center;
+}
+
+.menu__paragraph {
+  text-align: center;
+  width: 565px;
+  margin: 0 auto;
+  margin-top: 43px;
+  margin-bottom: 51px;
+}
+
+.menu_btns {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 840px;
+  margin: 0 auto;
+}
+
+.menu__btn {
+  margin-bottom: 10px;
+}
+
+.menu__btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 120px;
+  min-height: 50px;
+  border-right: 1px solid rgba(51, 51, 51, 0.2);;
+}
+
+.menu__btn:nth-of-type(7n) button {
+  border-right: none;
+}
+
+.menu__btn:last-of-type button {
+  border-right: none;
+}
+
+.menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  margin-top: 35px;
+
+  grid-template-columns: repeat(3, 359px);
+  gap: 0 92px;
+}
+
+.menu__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu__item-title {
+  order: 1;
+  margin: 0;
+  font-family: "Banny", Arial, sans-serif;
+  line-height: 1;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu__text {
+  order: 3;
+  width: 100%;
+  margin: 0;
+}
+
+.menu__price {
+  order: 2;
+  margin: 0;
+  font-family: "Banny", Arial, sans-serif;
+  line-height: 1;
+  margin-top: 6px;
+  text-transform: uppercase;
+  font-size: 18px;
 }
