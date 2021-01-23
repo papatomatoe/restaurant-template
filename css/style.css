@@ -780,6 +780,7 @@ select {
 
 .menu {
   padding-top: 76px;
+  padding-bottom: 62px;
 }
 
 .menu__container {
@@ -837,41 +838,89 @@ select {
   margin: 0;
   padding: 0;
 
-  display: grid;
-  margin-top: 35px;
-
-  grid-template-columns: repeat(3, 359px);
-  gap: 0 92px;
-}
-
-.menu__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 35px;
+}
+
+.menu__item {
+  width: 359px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 27px;
 }
 
 .menu__item-title {
+  position: relative;
+  width: 225px;
   order: 1;
   margin: 0;
   font-family: "Banny", Arial, sans-serif;
   line-height: 1;
   margin-top: 6px;
+  margin-bottom: 3px;
   text-transform: uppercase;
   font-size: 18px;
+}
+
+.menu__item-delimiter {
+  order: 2;
+  width: auto;
+  line-height: 1;
+  margin-top: 6px;
+  margin-bottom: 3px;
+  letter-spacing: 4px;
+  align-self: flex-end;
 }
 
 .menu__text {
   order: 3;
   width: 100%;
   margin: 0;
+  font-size: 12px;
+  color: #999999;
 }
 
 .menu__price {
   order: 2;
   margin: 0;
+  margin-bottom: 3px;
   font-family: "Banny", Arial, sans-serif;
   line-height: 1;
   margin-top: 6px;
   text-transform: uppercase;
   font-size: 18px;
+  align-self: flex-end;
+}
+
+.section--black {
+  background-color: #fff;
+}
+
+.events {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/specialty's-bg.jpg") ;
+}
+
+.events__container {
+  padding-bottom: 14px;
+}
+
+.events__cols--left .events__img {
+  margin-left: 124px;
+}
+.events__cols::after {
+  top: calc(50% - 23px);
+}
+
+.events__cols--right .events__img {
+  margin-left: 41px;
+}
+
+.events__cols--right::after {
+  right: 0px;
 }
