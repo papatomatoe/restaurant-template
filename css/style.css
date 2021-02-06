@@ -43,10 +43,15 @@
   url("../fonts/Banny-BoldRound.woff") format("woff");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-width: 1440px;
 
   font-family: "Open Sans", Arial, sans-serif;
+
 }
 
 img {
@@ -128,10 +133,6 @@ select {
 .main-menu__list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 .main-menu__col {
@@ -140,6 +141,10 @@ select {
   display: flex;
   justify-content: space-around;
   width: 530px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .main-menu__col:after {
@@ -405,6 +410,15 @@ select {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.page-header__arrow:hover, 
+.page-header__arrow:focus {
+  opacity: 0.7;
+}
+
+.page-header__arrow:active {
+  opacity: 0.4;
+}
+
 .about {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -634,6 +648,10 @@ select {
   color: rgba(51, 51, 51, 0.5);
 }
 
+.form__input:hover {
+  opacity: 0.7;
+}
+
 
 
 .team {
@@ -667,6 +685,15 @@ select {
 
 .book_btn {
   grid-column: 1 / -1;
+}
+
+.book_btn:hover, 
+.book_btn:focus {
+  opacity: 0.7;
+}
+
+.book_btn:active {
+  opacity: 0.5;
 }
 
 .book__select-container {
@@ -1001,6 +1028,17 @@ select {
   list-style: none;
 }
 
+.gallery__img {
+  filter: saturate(0);
+  z-index: 0;
+}
+
+.gallery__item:hover {
+  filter: saturate(1);
+  transform: scale(1.1);
+  z-index: 1;
+}
+
 .contacts__container {
   display: block;
   margin-bottom: 100px;
@@ -1134,4 +1172,12 @@ select {
   font-weight: 700;
   color: #8C8C8C;
   text-decoration: none;
+}
+
+.booking {
+  display: none;
+}
+
+.success-wnd {
+  display: none;
 }
