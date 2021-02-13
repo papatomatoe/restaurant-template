@@ -485,6 +485,44 @@
   <footer class="page-footer">
     <p class="page-footer__copy">&copy; Copyright <a class="page-footer__link" href="">Mindblister</a> 2021</p>
   </footer>
+
+  <div class="book-modal">
+    <button class="book-modal__close" type="button" aria-label="close"></button>
+    <h2 class="section__title section__title--big book-modal__title">Book a table</h2>
+    <form class="form book-modal__form" action="#" method="GET">
+      <input class="form__input book-modal__input" type="text" name="name" placeholder="Name" required minlength="2"
+        maxlength="20">
+      <input class="form__input book-modal__input" type="email" name="email" placeholder="Email" required>
+      <input class="form__input book-modal__input" type="tel" name="phone" required placeholder="Phone">
+      <div class="book-modal__select-container">
+        <select class="form__input book-modal__input book-modal__select" name="people" required>
+          <option value="" disabled selected>People</option>
+          <option value="1">1 people</option>
+          <option value="2">2 people</option>
+          <option value="3">3 people</option>
+          <option value="4">4 people</option>
+          <option value="5">5 people</option>
+          <option value="6">6 people</option>
+        </select>
+      </div>
+      <input class="form__input book-modal__input book-modal__date" type="text" name="date" placeholder="Date (mm/dd)"
+        onfocus="(this.type='date')" onblur="(this.type='text')" required>
+      <div class="book-modal__select-container">
+        <select class="form__input book-modal__input book-modal__select" name="time">
+          <option value="" disabled selected>Time</option>
+          <option value="18:00">18:00</option>
+          <option value="19:00">19:00</option>
+          <option value="20:00">20:00</option>
+          <option value="21:00">21:00</option>
+          <option value="22:00">22:00</option>
+          <option value="23:00">23:00</option>
+          <option value="24:00">24:00</option>
+        </select>
+      </div>
+      <button class="btn btn--yellow form__btn book-modal_btn" type="submit">Book now</button>
+    </form>
+  </div>
+  <div class="modal-bg"></div>
 </body>
 
 </html>

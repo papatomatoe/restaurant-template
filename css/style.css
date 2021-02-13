@@ -48,6 +48,7 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 1440px;
 
   font-family: "Open Sans", Arial, sans-serif;
@@ -186,6 +187,8 @@ select {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: color 0.5s;
 }
 
 .main-menu__link:hover {
@@ -292,6 +295,8 @@ select {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  transition: opacity 0.5s;
 }
 
 .page-header__btn {
@@ -345,6 +350,8 @@ select {
   background-position: center;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+
+  transition: opacity 0.3s;
 }
 
 .social-list__link--fb {
@@ -378,6 +385,8 @@ select {
 
   background-color: #ffffff;
   border-radius: 50%;
+
+  transition: opacity 0.3s;
 }
 
 .page-header__arrow::before {
@@ -581,6 +590,7 @@ select {
 .section__contacts a {
   color: rgb(51, 51, 51, 0.5);
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .section__contacts--white a {
@@ -597,6 +607,10 @@ select {
 
 .section__contacts--bold {
   font-weight: 700;
+}
+
+.section__contacts a:hover {
+  color: #e8c300;
 }
 
 .section--black {
@@ -641,6 +655,8 @@ select {
   background: #e5e5e5;
   border: none;
   border-radius: 5px;
+
+  transition: opacity 0.3s;
 }
 
 .form__input::placeholder {
@@ -648,7 +664,8 @@ select {
   color: rgba(51, 51, 51, 0.5);
 }
 
-.form__input:hover {
+.form__input:hover,
+.form__input:focus {
   opacity: 0.7;
 }
 
@@ -776,6 +793,12 @@ select {
   position: absolute;
   bottom: 55px;
   left: 49.7%;
+
+  transition: opacity 0.3s;
+}
+
+.spec__control:hover {
+  opacity: 0.7;
 }
 
 .spec__control:nth-of-type(1) {
@@ -867,8 +890,22 @@ select {
 
   background-color: transparent;
   border: none;
-  border-right: 1px solid rgba(51, 51, 51, 0.2);;
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+  cursor: pointer;
+
+  transition: background-color 0.3s, color 0.1s;
 }
+
+.menu__btn button:hover,
+.menu__btn button:focus {
+  background-color: #e8c300;
+  color: #fff;
+}
+
+.menu__btn button:active {
+  opacity: 0.7;
+}
+
 
 .menu__btn:nth-of-type(7n) button {
   border-right: none;
@@ -1028,15 +1065,26 @@ select {
   list-style: none;
 }
 
+.gallery__item {
+  transform: scale(1);
+
+  transition: transform 0.3s;
+}
+
 .gallery__img {
   filter: saturate(0);
   z-index: 0;
+
+  transition: filter 0.5s;
 }
 
 .gallery__item:hover {
-  filter: saturate(1);
   transform: scale(1.1);
   z-index: 1;
+}
+
+.gallery__item:hover .gallery__img {
+  filter: saturate(1);
 }
 
 .contacts__container {
@@ -1083,7 +1131,15 @@ select {
   resize: none;
 
   grid-column: 1 / -1;
+
+  transition: opacity 0.3s;
 }
+
+.contacts__textarea:hover,
+.contacts__textarea:focus {
+  opacity: 0.7;
+}
+
 
 .contacts__box {
   display: flex;
@@ -1106,6 +1162,11 @@ select {
   font-size: 12px;
   line-height: 1.7;
   color: #999999;
+}
+
+.contacts__btn:hover,
+.contacts__btn:hover {
+  opacity: 0.7;
 }
 
 .contacts__data::before {
@@ -1149,6 +1210,17 @@ select {
 .contacts__link {
   color: #999999;
   text-decoration: none;
+
+  transition: color 0.3s;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  color: #e8c300;
+}
+
+.contacts__link:active {
+  opacity: 0.7;
 }
 
 .contacts__img {
@@ -1180,4 +1252,175 @@ select {
 
 .success-wnd {
   display: none;
+}
+
+.book-modal {
+  display: none;
+  z-index: 99;
+  position: fixed;
+
+  width: 600px;
+
+  background-color: #ffffff;
+
+  padding: 20px 80px 50px;
+
+  top: 200px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-shadow: 0 0 25px -5px gray;
+}
+
+.book-modal__close {
+  position: absolute;
+
+  top: 10px;
+  right: 10px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+
+  background-color: #e8c300;
+
+  border: 3px solid transparent;
+
+  transform: rotateZ(45deg);
+
+  cursor: pointer;
+
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.book-modal__close::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+
+  transition: background-color 0.3s;
+}
+
+.book-modal__close::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 30px;
+
+  border-radius: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+
+  transition: background-color 0.3s;
+}
+
+.book-modal__close:hover,
+.book-modal__close:focus {
+  border-color:#e8c300;
+  background-color: white;
+}
+
+.book-modal__close:hover::after,
+.book-modal__close:focus::after,
+.book-modal__close:hover::before,
+.book-modal__close:focus::before {
+  background-color: #e8c300;
+}
+
+.book-modal__close:active {
+  opacity: 0.5;
+}
+
+.book-modal__title {
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.book-modal__form {
+  width: 100%;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 60px);
+  gap: 10px;
+}
+
+.book-modal__select-container {
+  position: relative;
+}
+
+.book-modal__select {
+  width: 100%;
+  height: -webkit-fill-available;
+
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.book-modal__select option {
+  color: #000000;
+}
+
+.book-modal__select option:first-of-type {
+  display: none;
+}
+
+.book-modal__select-container::before {
+  content: "";
+  position: absolute;
+  top: 27px;
+  right: 21px;
+
+  display: block;
+  width: 13px;
+  height: 13px;
+
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+
+  pointer-events: none;
+}
+
+.book-modal_btn {
+  grid-column: 1 / -1;
+
+  transform: opacity 0.3s;
+}
+
+.book-modal_btn:hover,
+.book-modal_btn:focus {
+  opacity: 0.7;
+}
+
+.book-modal_btn:active {
+  opacity: 0.5;
+}
+
+.modal-bg {
+  display: none;
+  z-index: 98;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0,0,0, 0.5);
 }
