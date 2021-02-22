@@ -1223,9 +1223,13 @@ select {
   opacity: 0.7;
 }
 
-.contacts__img {
-  display: block;
+.contacts__map {
+  width: 1440px;
   margin: 0 auto;
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .page-footer {
@@ -1423,4 +1427,61 @@ select {
   left: 0;
 
   background-color: rgba(0,0,0, 0.5);
+}
+
+.modal-show {
+  display: block;
+  animation: open 0.5s;
+}
+
+.modal-bg-show {
+  display: block;
+}
+
+@keyframes open {
+  0% {
+    top: -500px;
+    animation-timing-function: linear;
+  }
+
+  50% {
+    top:240px;
+    animation-timing-function: ease-out;
+  }
+
+  70% {
+    top:180px;
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    top: 200px;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes error {
+  0% {
+    left: 50%;
+  }
+
+  20% {
+    left: calc(50% - 30px);
+  }
+
+  40% {
+    left: calc(50% + 20px);
+  }
+
+  60% {
+    left: calc(50% - 10px);
+  }
+
+  80% {
+    left: calc(50% + 5px);
+  }
+
+  100% {
+    left: 50%;
+  }
 }
