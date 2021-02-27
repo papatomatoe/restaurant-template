@@ -4,9 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Restaurant Hungry People Site">
   <title>Hungry People</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <div class="main-menu__list">
           <ul class="main-menu__col">
             <li class="main-menu__item">
-              <a class="main-menu__link" href="">home</a>
+              <a class="main-menu__link" href="#">home</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="#about">
@@ -115,12 +116,17 @@
         <div class="section__col section__col--info book__col book__col--info">
           <h2 class="section__title section__title--big">Book a table</h2>
           <form class="form book__form" action="#" method="GET">
-            <input class="form__input book__input" type="text" name="name" placeholder="Name" required minlength="2"
-              maxlength="20">
-            <input class="form__input book__input" type="email" name="email" placeholder="Email" required>
-            <input class="form__input book__input" type="tel" name="phone" required placeholder="Phone">
+            <label for="nameField" class="visually-hidden">name</label>
+            <input class="form__input book__input" id="nameField" type="text" name="name" placeholder="Name" required
+              minlength="2" maxlength="20">
+            <label for="emailField" class="visually-hidden">email</label>
+            <input class="form__input book__input" id="emailField" type="email" name="email" placeholder="Email"
+              required>
+            <label for="phoneField" class="visually-hidden">phone</label>
+            <input class="form__input book__input" id="phoneField" type="tel" name="phone" required placeholder="Phone">
             <div class="book__select-container">
-              <select class="form__input book__input book__select" name="people" required>
+              <label for="peopleField" class="visually-hidden">people</label>
+              <select class="form__input book__input book__select" id="peopleField" name="people" required>
                 <option value="" disabled selected>People</option>
                 <option value="1">1 people</option>
                 <option value="2">2 people</option>
@@ -130,10 +136,12 @@
                 <option value="6">6 people</option>
               </select>
             </div>
-            <input class="form__input book__input book__date" type="text" name="date" placeholder="Date (mm/dd)"
-              onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            <label for="dateField" class="visually-hidden">date</label>
+            <input class="form__input book__input book__date" type="text" id="dateField" name="date"
+              placeholder="Date (mm/dd)" onfocus="(this.type='date')" onblur="(this.type='text')" required>
             <div class="book__select-container">
-              <select class="form__input book__input book__select" name="time">
+              <label for="timeField" class="visually-hidden">time</label>
+              <select class="form__input book__input book__select" id="timeField" name="time">
                 <option value="" disabled selected>Time</option>
                 <option value="18:00">18:00</option>
                 <option value="19:00">19:00</option>
@@ -426,21 +434,21 @@
         <h2 class="visually-hidden">Gallery</h2>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <a class="gallery__link" href="">
+            <a class="gallery__link" href="#">
               <img class="gallery__img" src="img/Rectangle.jpg" alt="Photo1" width="360" height="360">
             </a>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href="">
+            <a class="gallery__link" href="#">
               <img class="gallery__img" src="img/Rectangle-1.jpg" alt="Photo2" width="360" height="360">
             </a>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href=""><img class="gallery__img" src="img/Rectangle-2.jpg" alt="Photo3"
+            <a class="gallery__link" href="#"><img class="gallery__img" src="img/Rectangle-2.jpg" alt="Photo3"
                 width="360" height="360"></a>
           </li>
           <li class="gallery__item">
-            <a class="gallery__link" href=""><img class="gallery__img" src="img/Rectangle-3.jpg" alt="Photo4"
+            <a class="gallery__link" href="#"><img class="gallery__img" src="img/Rectangle-3.jpg" alt="Photo4"
                 width="360" height="360"></a>
           </li>
         </ul>
@@ -457,11 +465,17 @@
           <fieldset class="contacts__fieldset">
             <legend class="visually-hidden">Message</legend>
             <div class="contacts__field-wrapper">
-              <input class="form__input contacts__input" type="text" name="Name" placeholder="Name" required
-                minlength="2" maxlength="20">
-              <input class="form__input contacts__input" type="email" name="email" placeholder="Email" required>
-              <input class="form__input contacts__input" type="tel" name="Phone" placeholder="Phone" required>
-              <textarea class="contacts__textarea" name="message" cols="30" rows="10" required
+              <label for="contactName" class="visually-hidden">name</label>
+              <input class="form__input contacts__input" id="contactName" type="text" name="Name" placeholder="Name"
+                required minlength="2" maxlength="20">
+              <label for="contactEmail" class="visually-hidden">email</label>
+              <input class="form__input contacts__input" id="contactEmail"=type="email" name="email" placeholder="Email"
+                required>
+              <label for="contactPhone" class="visually-hidden">phone</label>
+              <input class="form__input contacts__input" type="tel" id="contactPhone" name="Phone" placeholder="Phone"
+                required>
+              <label for="contactMessage" class="visually-hidden">message text</label>
+              <textarea class="contacts__textarea" id="contactMessage" name="message" cols="30" rows="10" required
                 placeholder="Message"></textarea>
             </div>
           </fieldset>
@@ -478,26 +492,32 @@
         </form>
       </div>
       <div class="contacts__map" aria-label="5th London Boulevard, U.K.">
-        <iframe
+        <iframe title="5th London Boulevard, U.K."
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1437.2091913519232!2d-0.14640736507944466!3d51.48897450608995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1614015965273!5m2!1sru!2sru"
           width="1440" height="475" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <p class="page-footer__copy">&copy; Copyright <a class="page-footer__link" href="">Mindblister</a> 2021</p>
+    <p class="page-footer__copy">&copy; Copyright <a class="page-footer__link" href="#">Mindblister</a> 2021</p>
   </footer>
 
-  <div class="book-modal modal-hide">
+  <div class="book-modal">
     <button class="book-modal__close" type="button" aria-label="close"></button>
     <h2 class="section__title section__title--big book-modal__title">Book a table</h2>
     <form class="form book-modal__form" action="#" method="GET">
-      <input class="form__input book-modal__input" type="text" name="name" placeholder="Name" required minlength="2"
-        maxlength="20">
-      <input class="form__input book-modal__input" type="email" name="email" placeholder="Email" required>
-      <input class="form__input book-modal__input" type="tel" name="phone" required placeholder="Phone">
+      <label for="modalNameField" class="visually-hidden">name</label>
+      <input class="form__input book-modal__input" id="modalNameField" type="text" name="name" placeholder="Name"
+        required minlength="2" maxlength="20">
+      <label for="modalEmailField" class="visually-hidden">email</label>
+      <input class="form__input book-modal__input" id="modalEmailField" type="email" name="email" placeholder="Email"
+        required>
+      <label for="modalPhoneField" class="visually-hidden">phone</label>
+      <input class="form__input book-modal__input" id="modalPhoneField" type="tel" name="phone" required
+        placeholder="Phone">
       <div class="book-modal__select-container">
-        <select class="form__input book-modal__input book-modal__select" name="people" required>
+        <label for="modalPeopleField" class="visually-hidden">people</label>
+        <select class="form__input book-modal__input book-modal__select" id="modalPeopleField" name="people" required>
           <option value="" disabled selected>People</option>
           <option value="1">1 people</option>
           <option value="2">2 people</option>
@@ -507,10 +527,12 @@
           <option value="6">6 people</option>
         </select>
       </div>
-      <input class="form__input book-modal__input book-modal__date" type="text" name="date" placeholder="Date (mm/dd)"
-        onfocus="(this.type='date')" onblur="(this.type='text')" required>
+      <label for="modalDateField" class="visually-hidden">date</label>
+      <input class="form__input book-modal__input book-modal__date" id="modalDateField" type="text" name="date"
+        placeholder="Date (mm/dd)" onfocus="(this.type='date')" onblur="(this.type='text')" required>
       <div class="book-modal__select-container">
-        <select class="form__input book-modal__input book-modal__select" name="time">
+        <label for="modalTimeField" class="visually-hidden">time</label>
+        <select class="form__input book-modal__input book-modal__select" id="modalTimeField" name="time">
           <option value="" disabled selected>Time</option>
           <option value="18:00">18:00</option>
           <option value="19:00">19:00</option>
@@ -526,7 +548,7 @@
   </div>
   <div class="modal-bg"></div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
